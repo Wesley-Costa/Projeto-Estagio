@@ -74,11 +74,11 @@ class ClienteController extends Controller
     public function show($id)
     {
         $cliente = Cliente::get();
-        return Datatables::of($cliente)
+        return DataTables::of($cliente)
             ->editColumn('acao', function ($cliente) {
                 return '
                     <div class="btn-group btn-group-sm">
-                        <a href="/cliente/'.$cliente->id.'/edit"
+                        <a href="/clientes/'.$cliente->id.'/edit"
                             class="btn btn-info"
                             title="Editar" data-toggle="tooltip">
                             <i class="fas fa-pencil-alt"></i>
