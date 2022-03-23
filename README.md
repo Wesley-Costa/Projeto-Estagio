@@ -14,7 +14,7 @@ Para que o projeto possa ser instalado e funcionar corretamente devesse seguir o
 - **$ composer install**
 - **$ php artisan key:generate** - Mas antes de rodar este comando verifique a configuracao com o banco no arquivo .env. 
 - **$ php artisan migrate** - E para a criação do banco é necessario utilizar esse comando.
-Acesssar pela url: http://projeto.local/clientes
+- **Para visualizar e utilizar o projeto no navegador, utilize a url: http://projeto.local/clientes**
 
 ## Ferramentas e Plugins
 A ferramentas e plugins utilizados foram para complementar a parte da interface do usuario. Dessa forma, tecnologias como AdminLTE, DataTables e MaskedInput, foram as ferramentas utilizadas para interação com tabelas, aplicação de mascars nos campos HTML para cadastro e edição, além do template administrativo fornecido pelo AdminLTE.
