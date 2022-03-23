@@ -1,4 +1,4 @@
-# Projeto feito com Laravel PHP Framework.
+# Projeto de estágio feito com o Framework Laravel.
 
 ## Objetivo 
 Criação de uma aplicação de cadastro de clientes, com as funções de criação, listagem, edição, remoção de dados, fazendo um CRUD básico para fins educativos.
@@ -19,13 +19,12 @@ Para que o projeto possa ser instalado e funcionar corretamente devesse seguir o
 ## Ferramentas e Plugins
 A ferramentas e plugins utilizados foram para complementar a parte da interface do usuario. Dessa forma, tecnologias como AdminLTE, DataTables e MaskedInput, foram as ferramentas utilizadas para interação com tabelas, aplicação de mascars nos campos HTML para cadastro e edição, além do template administrativo fornecido pelo AdminLTE.
 
-## Topicos auxiliares
-
-**Banco de Dados:**
+### Banco de Dados
 As configurações do banco ficam na pasta config, onde é possivel acessar a partir do arquivo databases.php. Quanto a criação das tabelas, elas são criadas utilizando as chamadas migrations, e assim como em outros frameworks, o Laravel utiliza as migrations para criar toda estruturação das tabelas do banco. Já para criar as tabelas no banco e assim consolidar a estrutura feita nas migrations devemos executar o seguinte comando:
 - $ php artisan migrate
 
-Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco.
+Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco. 
+O banco de dados utilizado foi o Postgres.
 
 ### Estrutura de pastas para acesso aos arquivos
 - As Models do projeto foram criada diretamente na pasta /app
