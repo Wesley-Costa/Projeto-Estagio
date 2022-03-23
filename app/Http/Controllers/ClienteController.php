@@ -58,7 +58,6 @@ class ClienteController extends Controller
 
             Session::flash('mensagem', 'Cliente cadastrado com sucesso!');
             return Redirect::to('/clientes');
-
         } catch (\Exception $error) {
             Session::flash('mensagem', 'Erro no cadastramento"');
             return back()->withInput();
@@ -77,19 +76,19 @@ class ClienteController extends Controller
         return DataTables::of($cliente)
             ->editColumn('acao', function ($cliente) {
                 return '
-                    <div class="btn-group btn-group-sm">
-                        <a href="/clientes/'.$cliente->id.'/edit"
-                            class="btn btn-info"
-                            title="Editar" data-toggle="tooltip">
-                            <i class="fas fa-pencil-alt"></i>
-                        </a>
-                        <a href="#"
-                            class="btn btn-danger btnExcluir"
-                            data-id="'.$cliente->id.'"
-                            title="Excluir" data-toggle="tooltip">
-                            <i class="fas fa-trash"></i>
-                        </a>
-                    </div>';
+                <div class="btn-group btn-group-sm">
+                    <a href="/clientes/'.$cliente->id.'/edit"
+                        class="btn btn-info"
+                        title="Editar" data-toggle="tooltip">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                    <a href="#"
+                        class="btn btn-danger btnExcluir"
+                        data-id="'.$cliente->id.'"
+                        title="Excluir" data-toggle="tooltip">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </div>';
             })
             ->escapeColumns([0])
             ->make(true);
@@ -146,13 +145,9 @@ class ClienteController extends Controller
      */
     public function destroy($id)
     {
-        try {
-            $cliente = Cliente::find($id);
-            $cliente->delete();
-            // return response()->json(array('status' => "OK"));
-            return Redirect::to('/clientes');
-        } catch (\Exception $erro) {
-            return  response()->json(array('erro' => "ERRO"));
-        }
+        $cliente = Cliente::find($id);
+        $cliente->delete();
+        // return response()->json(array('status' => "OK"));
+        return Redirect::to('/clientes');
     }
 }

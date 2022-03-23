@@ -31,7 +31,7 @@ class RequestCliente extends FormRequest
                 'dataNascimento' => ['required', 'date'],
                 'telefone' => ['required', 'string'],
                 'email' => ['required', 'string', 'max:255'],
-                'cpf' => ['required', 'numeric'],
+                'cpf' => ['required', 'string'],
                 'endereco' => ['required', 'string', 'max:255']
             ];
         }
@@ -42,8 +42,8 @@ class RequestCliente extends FormRequest
                 'dataNascimento' => ['required', 'date'],
                 'telefone' => ['required', 'string'],
                 'email' => ['required', 'string', 'max:255'],
-                'cpf' => ['required', 'numeric'],
-                'endereco' => ['required', 'string', 'max:255','regex:/^([a-zA-Zà-úÀ-Ú]|-|_|\s)+$/']
+                'cpf' => ['required', 'string'],
+                'endereco' => ['required', 'string', 'max:255']
             ];
         }
     }

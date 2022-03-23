@@ -2,7 +2,15 @@
 @section('htmlheader_titulo', 'Editar Cliente')
 
 @section('scripts_adicionais')
-
+    <script type="text/javascript" src=" {{ asset('plugins/maskedinput/jquery.maskedinput.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $("#cpf").mask("999.999.999-99");
+        });
+        $(document).ready(function($) {
+            $("#telefone").mask("(99)99999-9999");
+        });
+    </script>
 @endsection
 
 @section('conteudo')
@@ -51,7 +59,7 @@
                         </div>
                         <div class="form-group col-2">
                             <label>Telefone</label><br>
-                            <input type="text" name='telefone' value="{{ $cliente->telefone }}"
+                            <input type="text" id='telefone' name='telefone' value="{{ $cliente->telefone }}"
                                 class="form-control @error('telefone') is-invalid @enderror"
                                 value="{{ old('telefone') }}"><br>
                             @error('telefone')
@@ -72,7 +80,7 @@
                         </div>
                         <div class="form-group col-2">
                             <label>CPF</label><br>
-                            <input type="text" name='cpf' value="{{ $cliente->cpf }}"
+                            <input type="text" id='cpf' name='cpf' value="{{ $cliente->cpf }}"
                                 class="form-control  @error('cpf') is-invalid @enderror" value="{{ old('cpf') }}"><br>
                             @error('cpf')
                                 <span class="invalid-feedback" role="alert">
@@ -80,7 +88,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <div class="form-group col-2">
+                        <div class="form-group col-4">
                             <label>Endereço</label><br>
                             <input type="text" name='endereco' value="{{ $cliente->endereco }}"
                                 class="form-control  @error('endereco') is-invalid @enderror"
