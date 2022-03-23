@@ -27,7 +27,7 @@ As configurações do banco ficam na pasta config, onde é possivel acessar a pa
 
 Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco.
 
-### Estrutura
+### Estrutura de pastas para acesso aos arquivos
 - As Models do projeto foram criada diretamente na pasta /app
 - O acesso aos controladores da aplicação é feito por meio dos arquivos na pasta Controllers (Controllers)
 - Para definir as rotas da aplicação utilizamos o arquivo routes.php (app/Http/routes.php)
