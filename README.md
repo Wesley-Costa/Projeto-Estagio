@@ -21,8 +21,10 @@ A ferramentas e plugins utilizados foram para complementar a parte da interface 
 
 ## Topicos auxiliares
 
-**Banco de Dados:**As configurações do banco ficam na pasta config, onde é possivel acessar a partir do arquivo databases.php. Quanto a criação das tabelas, elas são criadas utilizando as chamadas migrations, e assim como em outros frameworks, o Laravel utiliza as migrations para criar toda estruturação das tabelas do banco. Já para criar as tabelas no banco e assim consolidar a estrutura feita nas migrations devemos executar o seguinte comando:
+**Banco de Dados:**
+    As configurações do banco ficam na pasta config, onde é possivel acessar a partir do arquivo databases.php. Quanto a criação das tabelas, elas são criadas utilizando as chamadas migrations, e assim como em outros frameworks, o Laravel utiliza as migrations para criar toda estruturação das tabelas do banco. Já para criar as tabelas no banco e assim consolidar a estrutura feita nas migrations devemos executar o seguinte comando:
         - $ php artisan migrate
+        
     Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco.
 
 ### Estrutura
