@@ -22,13 +22,13 @@ A ferramentas e plugins utilizados foram para complementar a parte da interface 
 ## Topicos auxiliares
 
 **Banco de Dados:**
-    As configurações do banco ficam na pasta config, onde é possivel acessar a partir do arquivo databases.php. Quanto a criação das tabelas, elas são criadas utilizando as chamadas migrations, e assim como em outros frameworks, o Laravel utiliza as migrations para criar toda estruturação das tabelas do banco. Já para criar as tabelas no banco e assim consolidar a estrutura feita nas migrations devemos executar o seguinte comando:
-        - $ php artisan migrate
-        
-    Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco.
+As configurações do banco ficam na pasta config, onde é possivel acessar a partir do arquivo databases.php. Quanto a criação das tabelas, elas são criadas utilizando as chamadas migrations, e assim como em outros frameworks, o Laravel utiliza as migrations para criar toda estruturação das tabelas do banco. Já para criar as tabelas no banco e assim consolidar a estrutura feita nas migrations devemos executar o seguinte comando:
+- $ php artisan migrate
+
+Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco.
 
 ### Estrutura
-    **As Models do projeto foram criada diretamente na pasta /app**
-    **O acesso aos controladores da aplicação é feito por meio dos arquivos na pasta Controllers (Controllers)**
-    **Para definir as rotas da aplicação utilizamos o arquivo routes.php (app/Http/routes.php)**
-    **Para acessar as views e outros arquivos da aplicação é necessario acessar a pasta resources, onde podem ser encontrados arquivos JS, CSS, as blades PHP, além de imagens e outros arquivos que podem ser uteis na /public.**
+- As Models do projeto foram criada diretamente na pasta /app
+- O acesso aos controladores da aplicação é feito por meio dos arquivos na pasta Controllers (Controllers)
+- Para definir as rotas da aplicação utilizamos o arquivo routes.php (app/Http/routes.php)
+- Para acessar as views e outros arquivos da aplicação é necessario acessar a pasta resources, onde podem ser encontrados arquivos JS, CSS, as blades PHP, além de imagens e outros arquivos que podem ser uteis na /public.
