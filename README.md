@@ -9,7 +9,7 @@ Motivação: Este projeto tem como motivação o aprendizado sobre as ferramenta
 ## Para utilizar o projeto
 Para que o projeto possa ser instalado e funcionar corretamente devesse seguir os seguintes passos:
 
-- **[$ git clone https://github.com/Wesley-Costa/Projeto-Estagio]**
+- **$ git clone https://github.com/Wesley-Costa/Projeto-Estagio**
 - **[$ cd projeto]**
 - **[$ composer install]**
 - **[$ php artisan key:generate]**
