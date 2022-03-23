@@ -29,7 +29,7 @@ A ferramentas e plugins utilizados foram para complementar a parte da interface 
     - Vale ressaltar que é importante ter o conhecimento sobre MassAssigment para poder codificar a Model de forma correta para acrescentar os respectivos campos no objeto que servirá de guia para a inserção de dados no banco.
 
 **[Estrutura]**
-    **- As Models do projeto foram criada diretamente na pasta /app**
-    **- O acesso aos controladores da aplicação é feito por meio dos arquivos na pasta Controllers (Controllers)**
-    **- Para definir as rotas da aplicação utilizamos o arquivo routes.php (app/Http/routes.php)**
-    **- Para acessar as views e outros arquivos da aplicação é necessario acessar a pasta resources, onde podem ser encontrados arquivos JS, CSS, as blades PHP, além de imagens e outros arquivos que podem ser uteis na /public.**
+**- As Models do projeto foram criada diretamente na pasta /app**
+**- O acesso aos controladores da aplicação é feito por meio dos arquivos na pasta Controllers (Controllers)**
+**- Para definir as rotas da aplicação utilizamos o arquivo routes.php (app/Http/routes.php)**
+**- Para acessar as views e outros arquivos da aplicação é necessario acessar a pasta resources, onde podem ser encontrados arquivos JS, CSS, as blades PHP, além de imagens e outros arquivos que podem ser uteis na /public.**
