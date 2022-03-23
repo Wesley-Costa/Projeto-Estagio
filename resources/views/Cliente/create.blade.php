@@ -84,7 +84,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <div class="form-group col-4">
+                        <div class="form-group col-3">
                             <label>Endereço</label><br>
                             <input type="text" name='endereco' class="form-control  @error('endereco') is-invalid @enderror"
                                 value="{{ old('endereco') }}"><br>
